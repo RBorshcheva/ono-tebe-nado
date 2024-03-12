@@ -1,1 +1,340 @@
-/* место для вашего кода */
+/* секция шапки */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  margin: 92px 50px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: circle;
+  text-transform: lowercase;
+  gap: 34px;
+}
+
+.header-logo-img {
+  width: 148px;
+  height: 105px;
+}
+
+.contacts {
+  justify-self: right;
+  flex-wrap: wrap;
+  max-width: 240px;
+  line-height: 25px;
+  font-style: normal;
+}
+
+.no-mark {
+  list-style-type: none;
+}
+
+.menu-title-item-active {
+  text-decoration: none;
+}
+
+.underline {
+  text-underline-offset: 4px;
+}
+
+/* секция  заголовка */
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 1100px;
+  height: 757px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(0 0 1 / 0.6);
+}
+
+.cover__title {
+  padding: 165px 0 0 50px;
+  width: 1100px;
+  height: 757px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  display: grid;
+  row-gap: 20px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  line-height: 115px;
+  letter-spacing: 30px;
+}
+
+.space-top {
+  letter-spacing: 60px;
+}
+
+.aligned-text_center {
+  padding-left: 285px;
+  letter-spacing: 30px;
+}
+
+.space-center {
+  margin-left: 30px;
+}
+
+.aligned-text_right {
+  padding-left: 585px;
+  letter-spacing: 60px;
+}
+
+.space-right {
+  letter-spacing: 30px;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  margin-top: 135px;
+  margin-left: 30px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  margin-left: 80px;
+  height: 50px;
+  width: 256px;
+  border: 1px solid;
+  padding: 5px 15px;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* секция карточек*/
+.lots {
+  padding: 0 24px;
+}
+
+.lots__heading {
+  padding-top: 180px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.lots__card-list {
+  color: #fff;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  max-height: 563px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 334px;
+  flex-shrink: 0;
+}
+
+.card {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__title {
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration-thickness: 1px;
+  font-style: normal;
+  text-underline-offset: 4px;
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 52px 40px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.card__text {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 334px;
+  height: 563px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.lots__link {
+  display: block;
+  padding: 32px 65px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* секция about*/
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 146px 24px 280px 24px;
+}
+
+.logo__background {
+  background-color: #000;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__column-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.about__column {
+  grid-column: 2/4;
+}
+.about__logo-image {
+  height: 114px;
+  width: 148px;
+}
+
+.about__section {
+  max-width: 698px;
+  max-height: 31px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 180px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 103px 0;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* раздел подвала */
+
+.footer {
+  margin: 0 50px 88px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-contacts {
+  justify-self: left;
+  flex-wrap: wrap;
+  max-width: 240px;
+  line-height: 25px;
+  font-style: normal;
+}
+
+.footer-menu-list {
+  text-align: center;
+  line-height: 22px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-self: flex-end;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
