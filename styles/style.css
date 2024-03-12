@@ -217,6 +217,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  position: static;
+  z-index: -2;
 }
 
 .card_type_film {
@@ -310,12 +312,8 @@
   line-height: 24px;
 }
 
-.footer-contacts {
-  flex-wrap: wrap;
+footer.footer .contacts {
   justify-self: left;
-  max-width: 240px;
-  font-style: normal;
-  line-height: 25px;
 }
 
 .footer-menu-list {
